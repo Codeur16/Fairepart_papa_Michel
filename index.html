@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <title>Papa CHAAZOU Michel - Hommage 1948-2026</title>
 
     <!-- Scripts & Styles -->
@@ -79,6 +79,166 @@
             * {
                 -webkit-print-color-adjust: exact !important;
                 print-color-adjust: exact !important;
+            }
+        }
+
+        /* Responsive mobile improvements */
+        @media (max-width: 640px) {
+            /* Prevent horizontal overflow */
+            html, body {
+                overflow-x: hidden !important;
+                width: 100% !important;
+                max-width: 100vw !important;
+            }
+            
+            /* Container adjustments */
+            .max-w-7xl {
+                max-width: 100vw !important;
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+            
+            /* Typography adjustments */
+            .text-4xl {
+                font-size: 1.75rem !important;
+                line-height: 1.2 !important;
+            }
+            
+            .text-5xl {
+                font-size: 2rem !important;
+                line-height: 1.2 !important;
+            }
+            
+            .text-6xl {
+                font-size: 2.25rem !important;
+                line-height: 1.2 !important;
+            }
+            
+            /* Hero section adjustments */
+            .hero-portrait {
+                max-width: 280px !important;
+                height: 280px !important;
+            }
+            
+            /* Gallery adjustments */
+            .aspect-video {
+                aspect-ratio: 4/3 !important;
+            }
+            
+            .grid-cols-2 {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+            
+            .grid-cols-3 {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+            
+            .grid-cols-4 {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+            
+            .grid-cols-5 {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+            
+            /* Carousel adjustments */
+            .w-96 {
+                width: 100% !important;
+                max-width: 320px !important;
+            }
+            
+            /* Form adjustments */
+            .px-4 {
+                padding-left: 0.75rem !important;
+                padding-right: 0.75rem !important;
+            }
+            
+            .py-3 {
+                padding-top: 0.75rem !important;
+                padding-bottom: 0.75rem !important;
+            }
+            
+            /* Button adjustments */
+            .p-3 {
+                padding: 0.5rem !important;
+            }
+            
+            /* Navigation adjustments */
+            .mx-12 {
+                margin-left: 1rem !important;
+                margin-right: 1rem !important;
+            }
+            
+            /* Card adjustments */
+            .rounded-2xl {
+                border-radius: 1rem !important;
+            }
+            
+            .p-8 {
+                padding: 1.5rem !important;
+            }
+            
+            .p-6 {
+                padding: 1rem !important;
+            }
+            
+            /* Spacing adjustments */
+            .gap-6 {
+                gap: 1rem !important;
+            }
+            
+            .gap-4 {
+                gap: 0.75rem !important;
+            }
+            
+            .mb-12 {
+                margin-bottom: 2rem !important;
+            }
+            
+            .py-20 {
+                padding-top: 3rem !important;
+                padding-bottom: 3rem !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            /* Extra small screens */
+            .text-4xl {
+                font-size: 1.5rem !important;
+            }
+            
+            .text-5xl {
+                font-size: 1.75rem !important;
+            }
+            
+            .hero-portrait {
+                max-width: 240px !important;
+                height: 240px !important;
+            }
+            
+            .max-w-2xl {
+                max-width: 100vw !important;
+            }
+            
+            .px-4 {
+                padding-left: 0.5rem !important;
+                padding-right: 0.5rem !important;
+            }
+        }
+        
+        @media (max-width: 380px) {
+            /* Very small screens */
+            .text-4xl {
+                font-size: 1.25rem !important;
+            }
+            
+            .text-5xl {
+                font-size: 1.5rem !important;
+            }
+            
+            .hero-portrait {
+                max-width: 200px !important;
+                height: 200px !important;
             }
         }
 
@@ -662,7 +822,7 @@
                 <div class="order-2 md:order-1 space-y-6 reveal slide-in-left">
                     <!-- Nom et dates -->
                     <div class="glass-panel p-8 rounded-xl border-l-4 border-gold-500">
-                        <h2 class="serif-font text-4xl md:text-5xl font-bold text-stone-850 mb-6">
+                        <h2 class="serif-font text-3xl md:text-4xl lg:text-5xl font-bold text-stone-850 mb-6">
                             Papa CHAAZOU Michel
                         </h2>
                         
@@ -789,7 +949,7 @@
                     <div class="ornament-divider mb-6">
                         <span>✞</span>
                     </div>
-                    <p class="serif-font text-4xl font-bold text-gold-700 mb-6">
+                    <p class="serif-font text-3xl md:text-4xl font-bold text-gold-700 mb-6">
                         Papa CHAAZOU Michel
                     </p>
                     <div class="bg-white/60 p-4 rounded-lg border-l-4 border-gold-600 inline-block">
@@ -1237,8 +1397,8 @@
     <section id="galerie" class="py-20 px-4 bg-gradient-to-br from-stone-100 to-stone-50">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-12">
-                <h2 class="serif-font text-4xl font-bold text-stone-800 mb-4">
-                    <i data-lucide="image" class="w-8 h-8 inline text-gold-600 mr-3"></i>
+                <h2 class="serif-font text-3xl md:text-4xl font-bold text-stone-800 mb-4">
+                    <i data-lucide="image" class="w-6 h-8 md:w-8 md:h-8 inline text-gold-600 mr-3"></i>
                     Galerie de Souvenirs
                 </h2>
                 <p class="text-stone-600 max-w-2xl mx-auto">
@@ -1262,11 +1422,11 @@
                     </div>
                     
                     <!-- Contrôles de navigation -->
-                    <button id="galleryPrev" class="absolute left-4 top-1/2 -translate-y-1/2 bg-gold-600/90 hover:bg-gold-700 text-white rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-110">
-                        <i data-lucide="chevron-left" class="w-6 h-6"></i>
+                    <button id="galleryPrev" class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-gold-600/90 hover:bg-gold-700 text-white rounded-full p-2 md:p-3 shadow-lg transition-all duration-300 transform hover:scale-110">
+                        <i data-lucide="chevron-left" class="w-4 h-4 md:w-6 md:h-6"></i>
                     </button>
-                    <button id="galleryNext" class="absolute right-4 top-1/2 -translate-y-1/2 bg-gold-600/90 hover:bg-gold-700 text-white rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-110">
-                        <i data-lucide="chevron-right" class="w-6 h-6"></i>
+                    <button id="galleryNext" class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-gold-600/90 hover:bg-gold-700 text-white rounded-full p-2 md:p-3 shadow-lg transition-all duration-300 transform hover:scale-110">
+                        <i data-lucide="chevron-right" class="w-4 h-4 md:w-6 md:h-6"></i>
                     </button>
                     
                     <!-- Indicateurs -->
@@ -1354,8 +1514,8 @@
     <section id="avis" class="py-20 px-4 bg-gradient-to-br from-stone-50 to-stone-100">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-12">
-                <h2 class="serif-font text-4xl font-bold text-stone-800 mb-4">
-                    <i data-lucide="heart" class="w-8 h-8 inline text-red-500 mr-3"></i>
+                <h2 class="serif-font text-3xl md:text-4xl font-bold text-stone-800 mb-4">
+                    <i data-lucide="heart" class="w-6 h-8 md:w-8 md:h-8 inline text-red-500 mr-3"></i>
                     Messages de Condoléances
                 </h2>
                 <p class="text-stone-600 max-w-2xl mx-auto">
@@ -1366,16 +1526,16 @@
             <!-- Carousel horizontal des avis -->
             <div class="relative">
                 <!-- Boutons de navigation -->
-                <button id="carouselPrev" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-gold-600 hover:bg-gold-700 text-white rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-110">
-                    <i data-lucide="chevron-left" class="w-6 h-6"></i>
+                <button id="carouselPrev" class="absolute left-2 md:left-0 top-1/2 -translate-y-1/2 z-10 bg-gold-600 hover:bg-gold-700 text-white rounded-full p-2 md:p-3 shadow-lg transition-all duration-300 transform hover:scale-110">
+                    <i data-lucide="chevron-left" class="w-4 h-4 md:w-6 md:h-6"></i>
                 </button>
-                <button id="carouselNext" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-gold-600 hover:bg-gold-700 text-white rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-110">
-                    <i data-lucide="chevron-right" class="w-6 h-6"></i>
+                <button id="carouselNext" class="absolute right-2 md:right-0 top-1/2 -translate-y-1/2 z-10 bg-gold-600 hover:bg-gold-700 text-white rounded-full p-2 md:p-3 shadow-lg transition-all duration-300 transform hover:scale-110">
+                    <i data-lucide="chevron-right" class="w-4 h-4 md:w-6 md:h-6"></i>
                 </button>
                 
                 <!-- Conteneur du carousel -->
-                <div class="overflow-hidden mx-12">
-                    <div id="avisCarousel" class="flex gap-6 transition-transform duration-500 ease-in-out">
+                <div class="overflow-hidden mx-4 md:mx-12">
+                    <div id="avisCarousel" class="flex gap-4 md:gap-6 transition-transform duration-500 ease-in-out">
                         <!-- Les messages seront insérés ici -->
                     </div>
                 </div>
@@ -1908,15 +2068,27 @@
             const carousel = document.getElementById('avisCarousel');
             if (!carousel) return;
             
-            const itemWidth = 400; // Largeur fixe + gap
+            const containerWidth = window.innerWidth;
+            let itemWidth;
+            
+            if (containerWidth < 480) itemWidth = 320; // Very small screens
+            else if (containerWidth < 640) itemWidth = 340; // Small screens  
+            else if (containerWidth < 768) itemWidth = 360; // Medium screens
+            else if (containerWidth < 1024) itemWidth = 380; // Large screens
+            else itemWidth = 400; // Extra large screens
+            
             const offset = currentSlide * itemWidth;
             carousel.style.transform = `translateX(-${offset}px)`;
         }
         
         // Obtenir le nombre d'éléments visibles
         function getVisibleItems() {
-            const containerWidth = window.innerWidth - 96; // mx-12 * 8
-            return Math.floor(containerWidth / 400);
+            const containerWidth = window.innerWidth;
+            if (containerWidth < 480) return 1; // Very small screens
+            if (containerWidth < 640) return 1; // Small screens
+            if (containerWidth < 768) return 1; // Medium screens
+            if (containerWidth < 1024) return 2; // Large screens
+            return Math.floor((containerWidth - 96) / 400); // Extra large screens
         }
         
         // Mettre à jour les indicateurs
@@ -1965,9 +2137,9 @@
             
             if (messages.length === 0) {
                 carousel.innerHTML = `
-                    <div class="flex-shrink-0 w-96 bg-white/80 p-6 rounded-xl shadow-lg border-l-4 border-gold-400 text-center">
-                        <i data-lucide="message-circle" class="w-12 h-12 mx-auto mb-4 text-gold-600"></i>
-                        <p class="text-stone-600">Soyez le premier à laisser un message</p>
+                    <div class="flex-shrink-0 w-80 md:w-96 bg-white/80 p-4 md:p-6 rounded-xl shadow-lg border-l-4 border-gold-400 text-center">
+                        <i data-lucide="message-circle" class="w-8 h-8 md:w-12 md:h-12 mx-auto mb-4 text-gold-600"></i>
+                        <p class="text-stone-600 text-sm md:text-base">Soyez le premier à laisser un message</p>
                     </div>
                 `;
                 lucide.createIcons();
@@ -1976,11 +2148,11 @@
             
             messages.forEach((message, index) => {
                 const messageCard = document.createElement('div');
-                messageCard.className = 'flex-shrink-0 w-96 bg-white/80 p-6 rounded-xl shadow-lg border-l-4 border-gold-400 hover:shadow-xl transition-all duration-300';
+                messageCard.className = 'flex-shrink-0 w-80 md:w-96 bg-white/80 p-4 md:p-6 rounded-xl shadow-lg border-l-4 border-gold-400 hover:shadow-xl transition-all duration-300';
                 messageCard.innerHTML = `
                     <div class="flex justify-between items-start mb-3">
-                        <h4 class="font-bold text-gold-600 flex items-center gap-2">
-                            <i data-lucide="user" class="w-4 h-4"></i>
+                        <h4 class="font-bold text-gold-600 flex items-center gap-2 text-sm md:text-base">
+                            <i data-lucide="user" class="w-3 h-3 md:w-4 md:h-4"></i>
                             ${message.nom}
                         </h4>
                         <span class="text-xs text-stone-500">${formatDate(message.created_at || message.date)}</span>
@@ -1991,8 +2163,11 @@
                             ${message.relation || 'Non spécifié'}
                         </span>
                     </div>
-                    <p class="text-stone-700 leading-relaxed mb-3">${message.message}</p>
-                   
+                    <p class="text-stone-700 leading-relaxed mb-3 text-sm md:text-base">${message.message}</p>
+                    <div class="flex items-center gap-2 text-xs text-stone-400">
+                        <i data-lucide="database" class="w-3 h-3"></i>
+                        <span>ID: ${message.id} | Stocké dans Supabase</span>
+                    </div>
                 `;
                 carousel.appendChild(messageCard);
             });
